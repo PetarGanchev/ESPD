@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ЕЕДОП by Petar Ganchev
 // @namespace    http://tampermonkey.net/
-// @version      0.2.1
+// @version      0.3.0
 // @description  try to take over the world!
 // @author       Petar Ganchev
 // @match        */espd-web/*
