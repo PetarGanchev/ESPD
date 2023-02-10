@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ЕЕДОП by Petar Ganchev
 // @namespace    http://tampermonkey.net/
-// @version      0.2.1
+// @version      0.26
 // @description  try to take over the world!
 // @author       Petar Ganchev
 // @match        */espd-web/*
@@ -16,13 +16,15 @@
     document.querySelectorAll('.espd-container')[0].style.width = "100%";
     $(".col-xs-3").css("text-align", "right");
 
-	const select = document.querySelector('#country');
+	if (document.querySelector('#country') !== null ) {
+    const select = document.querySelector('#country');
 	for (let i = 0; i < select.options.length; i++) {
   			if (select.options[i].value === 'BG') {
     			select.options[i].selected = true;
     			break;
   			}
 			}
+        }
 
 
     if (window.innerWidth > 992) {
