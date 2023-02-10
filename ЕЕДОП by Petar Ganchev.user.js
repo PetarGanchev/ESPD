@@ -16,6 +16,14 @@
     document.querySelectorAll('.espd-container')[0].style.width = "100%";
     $(".col-xs-3").css("text-align", "right");
 
+	const select = document.querySelector('#country');
+	for (let i = 0; i < select.options.length; i++) {
+  			if (select.options[i].value === 'BG') {
+    			select.options[i].selected = true;
+    			break;
+  			}
+			}
+
 
     if (window.innerWidth > 992) {
         $(document).ready(function() {
