@@ -19,7 +19,7 @@
 
     if (window.innerWidth > 992) {
         $(document).ready(function() {
-            $(".col-md-5").css("max-width", "300px");
+            // $(".col-md-5").css("max-width", "300px");
             $(".col-md-5").css("width", "25%");
             $(".col-md-7").css("width", "75%");
             //           $(".col-xs-3").css("width", "15%");
@@ -45,7 +45,7 @@
     window.addEventListener("resize", function() {
         if (window.innerWidth < 992) {
 
-            $(".col-md-5").css("max-width", "");
+            //$(".col-md-5").css("max-width", "");
             $(".col-md-5").css("width", "");
             $(".col-md-7").css("width", "");
             //              $(".col-xs-3").css("width", "");
@@ -55,7 +55,7 @@
 
         }
         else {
-            $(".col-md-5").css("max-width", "300px");
+            //$(".col-md-5").css("max-width", "300px");
             $(".col-md-5").css("width", "25%");
             $(".col-md-7").css("width", "75%");
             //         $(".col-xs-3").css("width", "15%");
